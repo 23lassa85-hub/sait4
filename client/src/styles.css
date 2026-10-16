@@ -1,0 +1,1199 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Yeseva+One&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #212121;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page {
+  width: 100%;
+}
+
+.site-header {
+  width: 100%;
+  height: 70px;
+  background-color: #1F2B6C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-inner {
+  width: 1330px;
+  max-width: 95%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 36px;
+}
+
+.nav-item {
+  display: inline-flex;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #BFD2F8;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.icon-search {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.header-cta {
+  width: 173px;
+  height: 45px;
+  background-color: #BFD2F8;
+  color: #1F2B6C;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.hero {
+  width: 100%;
+  min-height: 750px;
+  background-image: url('./images/hero-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-inner {
+  width: 1100px;
+  max-width: 95%;
+  height: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-content {
+  width: 619px;
+  max-width: 100%;
+}
+
+.hero-text {
+  margin-bottom: 24px;
+}
+
+.hero-eyebrow {
+  font-size: 22px;
+  color: #159EEC;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.hero-title {
+  color: #1F2B6C;
+  font-size: 64px;
+  line-height: 1.15;
+  font-family: 'Yeseva One', Georgia, serif;
+  font-weight: 700;
+}
+
+.hero-button {
+  width: 190px;
+  height: 55px;
+  background-color: #BFD2F8;
+  color: #1F2B6C;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero-cards {
+  width: 1100px;
+  max-width: 95%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  gap: 20px;
+  z-index: 10;
+}
+
+.hero-card {
+  flex: 1;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 8px;
+  padding: 0 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.hero-card-dark {
+  background-color: #1F2B6C;
+  color: #ffffff;
+}
+
+.hero-card-light {
+  background-color: #BFD2F8;
+  color: #1F2B6C;
+}
+
+.hero-card-accent {
+  background-color: #159EEC;
+  color: #ffffff;
+}
+
+.hero-card-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.hero-card-icon {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.welcome {
+  width: 100%;
+  padding-top: 130px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-inner {
+  width: 992px;
+  max-width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.welcome-text {
+  width: 658px;
+  max-width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.welcome-eyebrow {
+  font-size: 18px;
+  color: #159EEC;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.welcome-title {
+  font-size: 32px;
+  color: #1F2B6C;
+  font-family: 'Yeseva One', Georgia, serif;
+  font-weight: 700;
+}
+
+.welcome-desc {
+  font-size: 16px;
+  color: #212121;
+  line-height: 1.6;
+}
+
+.welcome-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.welcome-more-text {
+  font-size: 18px;
+  color: #159EEC;
+  font-weight: 600;
+}
+
+.welcome-more-arrow {
+  font-size: 18px;
+  color: #1F2B6C;
+  font-weight: 700;
+}
+
+.welcome-photo-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-photo {
+  width: 992px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.services {
+  width: 100%;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-inner {
+  width: 1100px;
+  max-width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.services-head {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.services-eyebrow {
+  font-size: 18px;
+  color: #159EEC;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.services-title {
+  font-size: 32px;
+  color: #1F2B6C;
+  font-family: 'Yeseva One', Georgia, serif;
+  font-weight: 700;
+}
+
+.services-layout {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.services-tabs {
+  width: 158px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.services-tab {
+  height: 108px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.tab-light {
+  background-color: #ffffff;
+  color: #1F2B6C;
+}
+
+.tab-dark {
+  background-color: #1F2B6C;
+  color: #ffffff;
+}
+
+.tab-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.tab-label {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.tabs-all {
+  height: 44px;
+  background-color: #1F2B6C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.tabs-all-text {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.services-info {
+  width: 470px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.services-info-title {
+  font-size: 26px;
+  color: #212121;
+  font-family: 'Yeseva One', Georgia, serif;
+  font-weight: 700;
+}
+
+.services-benefits {
+  width: 100%;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  color: #212121;
+  font-weight: 500;
+  position: relative;
+  padding-left: 18px;
+}
+
+.benefit-item::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #159EEC;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.services-text {
+  font-size: 16px;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.services-photos {
+  width: 324px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  flex-shrink: 0;
+}
+
+.services-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.specialties {
+  width: 100%;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.specialties-inner {
+  width: 992px;
+  max-width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.specialties-head {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.specialties-eyebrow {
+  font-size: 18px;
+  color: #159EEC;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.specialties-title {
+  font-size: 32px;
+  color: #1F2B6C;
+  font-family: 'Yeseva One', Georgia, serif;
+  font-weight: 700;
+}
+
+.specialties-grid {
+  width: 992px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background-color: #cbd5e1;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.specialty-card {
+  background-color: #ffffff;
+  height: 172px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.specialty-active {
+  background-color: #1F2B6C !important;
+}
+
+.specialty-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.specialty-active .specialty-icon {
+  filter: brightness(0) invert(1);
+}
+
+.specialty-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1F2B6C;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.specialty-active .specialty-name {
+  color: #ffffff !important;
+}
+
+.booking {
+  width: 100%;
+  min-height: 580px;
+  background-image: url('./images/booking-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.booking-inner {
+  width: 1000px;
+  max-width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.booking-info {
+  width: 380px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-title {
+  font-size: 34px;
+  color: #159EEC;
+  font-family: 'Yeseva One', Georgia, serif;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 18px;
+}
+
+.booking-desc {
+  font-size: 15px;
+  color: #4a5568;
+  line-height: 1.65;
+}
+
+.booking-form {
+  width: 440px;
+  max-width: 100%;
+  background-color: #1F2B6C;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.booking-fields {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.field {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  cursor: pointer;
+}
+
+.field-left {
+  border-right: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.field-right {
+  border-right: none;
+}
+
+.field-label {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.field-arrow {
+  width: 12px;
+  height: 7px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+.field-message {
+  height: 180px;
+  padding: 18px 20px;
+}
+
+.message-label {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.booking-submit {
+  width: 100%;
+  height: 56px;
+  background-color: #BFD2F8;
+  color: #1F2B6C;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.doctors {
+  width: 100%;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doctors-inner {
+  width: 1100px;
+  max-width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.doctors-head {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.doctors-eyebrow {
+  font-size: 18px;
+  color: #159EEC;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.doctors-title {
+  font-size: 32px;
+  color: #1F2B6C;
+  font-family: 'Yeseva One', Georgia, serif;
+  font-weight: 700;
+}
+
+.doctors-row {
+  width: 992px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.doctor-card {
+  width: 317px;
+  background-color: #BFD2F8;
+  border-radius: 6px 6px 0 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.doctor-photo {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.doctor-info {
+  width: 100%;
+  padding: 18px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.doctor-name {
+  font-size: 18px;
+  color: #1F2B6C;
+  font-weight: 600;
+}
+
+.doctor-specialty {
+  font-size: 20px;
+  color: #1F2B6C;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.doctor-socials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.doctor-social-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.doctor-button {
+  width: 100%;
+  height: 46px;
+  background-color: #1F2B6C;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.doctors-pager {
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.news {
+  width: 100%;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-inner {
+  width: 1100px;
+  max-width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.news-head {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.news-eyebrow {
+  font-size: 18px;
+  color: #159EEC;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.news-title {
+  font-size: 32px;
+  color: #1F2B6C;
+  font-family: 'Yeseva One', Georgia, serif;
+  font-weight: 700;
+}
+
+.news-grid {
+  width: 992px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.news-card {
+  background-color: #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  padding-right: 14px;
+}
+
+.news-thumb {
+  width: 160px;
+  height: 154px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.news-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  text-align: left;
+}
+
+.news-meta {
+  font-size: 14px;
+  color: #159EEC;
+  font-weight: 600;
+}
+
+.news-heading {
+  font-size: 18px;
+  color: #1F2B6C;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.news-stats {
+  width: 125px;
+  height: auto;
+  object-fit: contain;
+}
+
+.news-pager {
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.contact {
+  width: 100%;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-inner {
+  width: 992px;
+  max-width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.contact-head {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.contact-eyebrow {
+  font-size: 18px;
+  color: #159EEC;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.contact-title {
+  font-size: 32px;
+  color: #1F2B6C;
+  font-family: 'Yeseva One', Georgia, serif;
+  font-weight: 700;
+}
+
+.contact-cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contact-card {
+  width: 233px;
+  height: 233px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.contact-light {
+  background-color: #BFD2F8;
+  color: #1F2B6C;
+}
+
+.contact-dark {
+  background-color: #1F2B6C;
+  color: #ffffff;
+}
+
+.contact-info {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.contact-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+.contact-name {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact-light .contact-name {
+  color: #1F2B6C;
+}
+
+.contact-dark .contact-name {
+  color: #ffffff;
+}
+
+.contact-line {
+  font-size: 15px;
+}
+
+.contact-light .contact-line {
+  color: #1F2B6C;
+}
+
+.contact-dark .contact-line {
+  color: #ffffff;
+}
+
+.footer {
+  width: 100%;
+  min-height: 427px;
+  background-color: #1F2B6C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 0 32px;
+}
+
+.footer-inner {
+  width: 992px;
+  max-width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-top {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.footer-brand {
+  width: 241px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-logo {
+  color: #ffffff;
+  font-size: 36px;
+  font-family: 'Yeseva One', Georgia, serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.footer-desc {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.footer-nav {
+  width: 142px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-heading {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-link {
+  color: #ffffff;
+  font-size: 16px;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  opacity: 1;
+  color: #BFD2F8;
+}
+
+.footer-contacts-col {
+  width: 236px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-contact {
+  color: #ffffff;
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+.footer-newsletter {
+  width: 272px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.newsletter-button {
+  width: 100%;
+  height: 50px;
+  background-color: #BFD2F8;
+  color: #1F2B6C;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  cursor: pointer;
+}
+
+.newsletter-arrow {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-copy {
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 0.85;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.footer-social-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.doctors-swiper,
+.news-swiper,
+.swiper {
+  width: 1100px;
+  max-width: 100%;
+  height: auto !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: #BFD2F8 !important;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #1F2B6C !important;
+  opacity: 1;
+}
